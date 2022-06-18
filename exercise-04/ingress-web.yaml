@@ -1,4 +1,4 @@
-apiVersion: networking.k8s.io/v1
+:apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: whoami-http
@@ -6,7 +6,7 @@ metadata:
     traefik.ingress.kubernetes.io/router.entrypoints: web
 spec:
   rules:
-    - host: whoami.<FIXME>.demo.traefiklabs.tech
+    - host: whoami.app.rancher.diegolabs.xyz
       http:
         paths:
           - path: /
